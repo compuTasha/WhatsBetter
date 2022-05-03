@@ -51,9 +51,9 @@
 		B8EFF4FE281F61620094D62C /* WhatsBetter */ = {
 			isa = PBXGroup;
 			children = (
+				B8EFF514281F62C40094D62C /* Resource */,
+				B8EFF50E281F625E0094D62C /* Screens */,
 				B8EFF4FF281F61620094D62C /* WhatsBetterApp.swift */,
-				B8EFF501281F61620094D62C /* ContentView.swift */,
-				B8EFF503281F61650094D62C /* Assets.xcassets */,
 				B8EFF505281F61650094D62C /* Preview Content */,
 			);
 			path = WhatsBetter;
@@ -65,6 +65,54 @@
 				B8EFF506281F61650094D62C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8EFF50D281F621E0094D62C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B8EFF501281F61620094D62C /* ContentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B8EFF50E281F625E0094D62C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B8EFF511281F62960094D62C /* Info */,
+				B8EFF50F281F626C0094D62C /* Bookmark */,
+				B8EFF50D281F621E0094D62C /* Home */,
+				B8EFF510281F62780094D62C /* Search */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B8EFF50F281F626C0094D62C /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		B8EFF510281F62780094D62C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B8EFF511281F62960094D62C /* Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		B8EFF514281F62C40094D62C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B8EFF503281F61650094D62C /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
