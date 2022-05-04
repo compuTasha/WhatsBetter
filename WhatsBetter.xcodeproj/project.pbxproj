@@ -11,6 +11,8 @@
 		B82B8CD82821242200E7528B /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B8CD72821242200E7528B /* PostCardView.swift */; };
 		B82B8CDA2821975400E7528B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B8CD92821975400E7528B /* Post.swift */; };
 		B8C426D728220C4D0086262B /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8C426D628220C4D0086262B /* Montserrat.ttf */; };
+		B8C426DB282213DF0086262B /* HashtagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C426DA282213DF0086262B /* HashtagView.swift */; };
+		B8C426DD282240C10086262B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C426DC282240C10086262B /* Color+Extension.swift */; };
 		B8EFF500281F61620094D62C /* WhatsBetterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFF4FF281F61620094D62C /* WhatsBetterApp.swift */; };
 		B8EFF504281F61650094D62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EFF503281F61650094D62C /* Assets.xcassets */; };
 		B8EFF507281F61650094D62C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EFF506281F61650094D62C /* Preview Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		B82B8CD92821975400E7528B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B8C426D628220C4D0086262B /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		B8C426D928220CD10086262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B8C426DA282213DF0086262B /* HashtagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagView.swift; sourceTree = "<group>"; };
+		B8C426DC282240C10086262B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		B8EFF4FC281F61620094D62C /* WhatsBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EFF4FF281F61620094D62C /* WhatsBetterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsBetterApp.swift; sourceTree = "<group>"; };
 		B8EFF503281F61650094D62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				B82B8CD72821242200E7528B /* PostCardView.swift */,
+				B8C426DA282213DF0086262B /* HashtagView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 		B82B8CDD2821AD2500E7528B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B8C426DC282240C10086262B /* Color+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -198,6 +204,8 @@
 			dependencies = (
 			);
 			name = WhatsBetter;
+			packageProductDependencies = (
+			);
 			productName = WhatsBetter;
 			productReference = B8EFF4FC281F61620094D62C /* WhatsBetter.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +234,8 @@
 				Base,
 			);
 			mainGroup = B8EFF4F3281F61620094D62C;
+			packageReferences = (
+			);
 			productRefGroup = B8EFF4FD281F61620094D62C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,9 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B82B8CD82821242200E7528B /* PostCardView.swift in Sources */,
+				B8C426DD282240C10086262B /* Color+Extension.swift in Sources */,
 				B8EFF500281F61620094D62C /* WhatsBetterApp.swift in Sources */,
 				B82B8CCF2820D97200E7528B /* HomeView.swift in Sources */,
 				B82B8CDA2821975400E7528B /* Post.swift in Sources */,
+				B8C426DB282213DF0086262B /* HashtagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
