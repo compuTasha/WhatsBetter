@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82B8CCF2820D97200E7528B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B8CCE2820D97200E7528B /* HomeView.swift */; };
+		B82B8CD82821242200E7528B /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B8CD72821242200E7528B /* PostCardView.swift */; };
+		B82B8CDA2821975400E7528B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B8CD92821975400E7528B /* Post.swift */; };
+		B8C426D728220C4D0086262B /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8C426D628220C4D0086262B /* Montserrat.ttf */; };
 		B8EFF500281F61620094D62C /* WhatsBetterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFF4FF281F61620094D62C /* WhatsBetterApp.swift */; };
-		B8EFF502281F61620094D62C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EFF501281F61620094D62C /* ContentView.swift */; };
 		B8EFF504281F61650094D62C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EFF503281F61650094D62C /* Assets.xcassets */; };
 		B8EFF507281F61650094D62C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EFF506281F61650094D62C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B82B8CCE2820D97200E7528B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B82B8CD72821242200E7528B /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
+		B82B8CD92821975400E7528B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B8C426D628220C4D0086262B /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
+		B8C426D928220CD10086262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B8EFF4FC281F61620094D62C /* WhatsBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EFF4FF281F61620094D62C /* WhatsBetterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsBetterApp.swift; sourceTree = "<group>"; };
-		B8EFF501281F61620094D62C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8EFF503281F61650094D62C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8EFF506281F61650094D62C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +39,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82B8CD02820D9B700E7528B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B82B8CD72821242200E7528B /* PostCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B82B8CD12820D9C600E7528B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B82B8CCE2820D97200E7528B /* HomeView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		B82B8CD52821232300E7528B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B82B8CD92821975400E7528B /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B82B8CDB2821AD0E00E7528B /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				B8EFF514281F62C40094D62C /* Resource */,
+				B82B8CDD2821AD2500E7528B /* Extension */,
+				B82B8CDC2821AD1700E7528B /* Literal */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		B82B8CDC2821AD1700E7528B /* Literal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Literal;
+			sourceTree = "<group>";
+		};
+		B82B8CDD2821AD2500E7528B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B8C426D828220C6E0086262B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B8C426D628220C4D0086262B /* Montserrat.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B8EFF4F3281F61620094D62C = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +114,9 @@
 		B8EFF4FE281F61620094D62C /* WhatsBetter */ = {
 			isa = PBXGroup;
 			children = (
-				B8EFF514281F62C40094D62C /* Resource */,
+				B8C426D928220CD10086262B /* Info.plist */,
+				B82B8CDB2821AD0E00E7528B /* Global */,
+				B82B8CD52821232300E7528B /* Models */,
 				B8EFF50E281F625E0094D62C /* Screens */,
 				B8EFF4FF281F61620094D62C /* WhatsBetterApp.swift */,
 				B8EFF505281F61650094D62C /* Preview Content */,
@@ -70,7 +135,8 @@
 		B8EFF50D281F621E0094D62C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B8EFF501281F61620094D62C /* ContentView.swift */,
+				B82B8CD12820D9C600E7528B /* Pages */,
+				B82B8CD02820D9B700E7528B /* Components */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -110,6 +176,7 @@
 		B8EFF514281F62C40094D62C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B8C426D828220C6E0086262B /* Fonts */,
 				B8EFF503281F61650094D62C /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -174,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8EFF507281F61650094D62C /* Preview Assets.xcassets in Resources */,
+				B8C426D728220C4D0086262B /* Montserrat.ttf in Resources */,
 				B8EFF504281F61650094D62C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,8 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8EFF502281F61620094D62C /* ContentView.swift in Sources */,
+				B82B8CD82821242200E7528B /* PostCardView.swift in Sources */,
 				B8EFF500281F61620094D62C /* WhatsBetterApp.swift in Sources */,
+				B82B8CCF2820D97200E7528B /* HomeView.swift in Sources */,
+				B82B8CDA2821975400E7528B /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +388,7 @@
 				DEVELOPMENT_TEAM = 8N8K22S85Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatsBetter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,6 +418,7 @@
 				DEVELOPMENT_TEAM = 8N8K22S85Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatsBetter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
