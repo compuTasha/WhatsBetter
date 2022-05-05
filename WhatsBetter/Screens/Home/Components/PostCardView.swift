@@ -22,22 +22,89 @@ struct PostCardView: View {
 
     var body: some View {
         ZStack {
-            Rectangle().foregroundColor(.white).shadow(color: .black.opacity(0.1), radius: 20, x: 0, y: 10)
+            RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(.white)
+                .shadow(color: .black.opacity(0.1), radius: 20, x: 0, y: 10)
             
-            VStack {
+            VStack(alignment: .leading, spacing: 0) {
+                
+                // Title...
                 HStack(spacing: 30) {
-                    Text(postTitle ?? "").font(Font.custom("Montserrat", size: 22)).font(.headline).fontWeight(.semibold)
+                    Text(postTitle ?? "")
+                        .font(Font.custom("Montserrat", size: 22))
+                        .font(.headline)
+                        .fontWeight(.semibold)
                     
                     
                     if postBookmark {
-                        Image(systemName: "bookmark.fill").frame(width: 24, height: 24)
+                        Image(systemName: "bookmark.fill").foregroundColor(Color.blue).frame(width: 24, height: 24)
                     }
                     else {
-                        Image(systemName: "bookmark").frame(width: 24, height: 24)
+                        Image(systemName: "bookmark").foregroundColor(Color.blue).frame(width: 24, height: 24)
                     }
-                }.padding(15)
+                }.padding(10)
                 
-            }
+                // Hashtag...
+                VStack {
+                    HashtagView().padding(.horizontal, 10)
+                }
+               
+                
+                // Images and Buttons...
+                HStack(spacing: 20) {
+                    VStack(spacing: 16) {
+                        if let image = postImageA {
+                            image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 134, height: 182)
+                                .cornerRadius(20)
+                                .shadow(color: .black.opacity(0.1), radius: 6, x: 0, y: 1)
+                                
+                        }
+                        
+                        Button(action: {
+                                    print("press A")
+                                    }) {
+                                        Text("A")
+                                            .fontWeight(.semibold)
+                                        .frame(width: 38, height: 38)
+                                        .foregroundColor(Color.white)
+                                        .background(Color.blue)
+                                        .clipShape(Circle())
+                                        .font(Font.custom("Montserrat", size: 12))
+                                        
+                                }
+                    }
+                    
+                    VStack(spacing: 16) {
+                        if let image = postImageB {
+                            image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 134, height: 182)
+                                .cornerRadius(20)
+                                
+                        }
+                        
+                        Button(action: {
+                                    print("press B")
+                                    }) {
+                                        Text("B")
+                                            .fontWeight(.semibold)
+                                        .frame(width: 38, height: 38)
+                                        .foregroundColor(Color.black)
+                                        .background(Color.hashtagGrey)
+                                        .clipShape(Circle())
+                                        .font(Font.custom("Montserrat", size: 12))
+                                        
+                                }
+                    }
+                    
+                }.padding(10).padding(.top,10)
+            
+                
+            }.padding(.vertical, 16)
         }
        
     }
