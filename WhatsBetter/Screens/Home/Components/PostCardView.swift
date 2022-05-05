@@ -19,7 +19,6 @@ struct PostCardView: View {
     @Binding var postHashtagCount: Int?
     @Binding var postHashtags: [String]?
 
-
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
@@ -64,13 +63,14 @@ struct PostCardView: View {
                         }
                         
                         Button(action: {
+                            postChoice = "A"
                                     print("press A")
                                     }) {
                                         Text("A")
                                             .fontWeight(.semibold)
                                         .frame(width: 38, height: 38)
-                                        .foregroundColor(Color.white)
-                                        .background(Color.blue)
+                                        .foregroundColor(postChoice == "A" ? .white : .black)
+                                        .background(postChoice == "A" ? .blue : .hashtagGrey)
                                         .clipShape(Circle())
                                         .font(Font.custom("Montserrat", size: 12))
                                         
@@ -88,13 +88,14 @@ struct PostCardView: View {
                         }
                         
                         Button(action: {
+                            postChoice = "B"
                                     print("press B")
                                     }) {
                                         Text("B")
                                             .fontWeight(.semibold)
                                         .frame(width: 38, height: 38)
-                                        .foregroundColor(Color.black)
-                                        .background(Color.hashtagGrey)
+                                        .foregroundColor(postChoice == "B" ? .white : .black)
+                                        .background(postChoice == "B" ? .blue : .hashtagGrey)
                                         .clipShape(Circle())
                                         .font(Font.custom("Montserrat", size: 12))
                                         
