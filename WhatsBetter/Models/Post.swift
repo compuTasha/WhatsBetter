@@ -21,5 +21,7 @@ struct Post {
 
 
 var defaultPost: [Post] = [
-    Post(title: "Which one is better?", writer: "user1923", content: "This is an app that can talk about which design is better. And I want to show a picture to compare with the full screen. Should I put an image behind the navigation bar?(B) What's your choice?", imageA: Image("img1a"), imageB: Image("img1b"), bookmark: true, hashtagCount: 1, hashtags: ["navigation bar"])
+    Post(title: "Which one is better?", writer: "user1923", content: "This is an app that can talk about which design is better. And I want to show a picture to compare with the full screen. Should I put an image behind the navigation bar?(B) What's your choice?", imageA: Image("img1a"), imageB: Image("img1b"), bookmark: true, hashtagCount: 1, hashtags: ["navigation bar"]),
+    Post(title: "Which one is better?", writer: "user1943", content: "This is an app that can talk about which design is better. And I want to show a picture to compare with the full screen. Should I put an image behind the navigation bar?(B) What's your choice?", imageA: Image("img1a"), imageB: Image("img1b"), hashtagCount: 3, hashtags: ["navigation bar"]),
+    Post(title: "Which one is better?", writer: "user1943", content: "This is an app that can talk about which design is better. And I want to show a picture to compare with the full screen. Should I put an image behind the navigation bar?(B) What's your choice?", imageA: Image("img1a"), imageB: Image("img1b"), hashtagCount: 1, hashtags: ["navigation bar"])
 ]
