@@ -14,14 +14,8 @@ struct HomeView: View {
     @State private var post: [Post] = defaultPost
     
     var body: some View {
-        
         ScrollView(.vertical, showsIndicators: false) {
             LazyVStack(spacing:18) {
-                
-                Image("logo").resizable()
-                    .scaledToFit()
-                    .padding(.top, 12)
-                
                 PostCardView(postTitle: $post[0].title, postImageA: $post[0].imageA, postImageB: $post[0].imageB, postChoice: $post[0].choice, postBookmark: $post[0].bookmark, postHashtagCount: $post[0].hashtagCount,
                              postHashtags: $post[0].hashtags)
                 PostCardView(postTitle: $post[1].title, postImageA: $post[1].imageA, postImageB: $post[1].imageB, postChoice: $post[1].choice, postBookmark: $post[1].bookmark, postHashtagCount: $post[1].hashtagCount,
@@ -38,3 +32,7 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+                    .padding(.top, 12)
+                    .scaledToFit()
+                Image("logo").resizable()
